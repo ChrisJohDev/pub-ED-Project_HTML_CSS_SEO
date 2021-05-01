@@ -1,0 +1,47 @@
+nav {
+    padding-left: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--header-color);
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--header-color);
+    padding: 0.5rem;
+    transition: 1s eas-in 200ms;
+}
+
+nav a:hover {
+    color: var(--hover-color);
+    background-color: var(--hover-bg-color);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: 1s eas-in 200ms;
+}
+
+nav>figure {
+    display: inline-block;
+}
+
+nav>ul {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 2rem;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav>ul::before {
+    content: "Telefonkatalogen";
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-right: 2.5rem;
+    padding: 0.5rem;
+}
