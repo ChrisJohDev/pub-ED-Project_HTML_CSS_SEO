@@ -35,6 +35,11 @@ td {
     padding-top: 0.5rem;
 }
 
+td a[href^=tel] {
+    color: inherit;
+    text-decoration: none;
+}
+
 section h2 {
     font-size: 2.5rem;
     color: var(--header-color);
