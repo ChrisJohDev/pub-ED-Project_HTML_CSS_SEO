@@ -122,8 +122,9 @@ article[class="table"] {
         font-size: 1.2rem;
     }
 
-    section>h2 {
-        font-size: 2.3rem;
+    section>h2,
+    article>h2 {
+        font-size: 1.8rem;
         text-align: center;
     }
 }
@@ -133,7 +134,12 @@ article[class="table"] {
         font-size: 0.8rem;
     }
 
-    section>h2 {
+    article[class="table"] {
+        width: 90%;
+    }
+
+    section>h2,
+    article>h2 {
         font-size: 1.6rem;
     }
 }
