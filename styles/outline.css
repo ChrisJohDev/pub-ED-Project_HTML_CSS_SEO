@@ -1,5 +1,5 @@
 html {
-    font-family: 'Days One', sans-serif;
+    font-family: 'Crimson Pro', serif;
     font-weight: lighter;
     letter-spacing: 0.3px;
     color: var(--text-color);
@@ -11,8 +11,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: 'Crimson Pro', serif;
+h6,
+th {
+    font-family: 'Days One', sans-serif;
     font-weight: 700;
     letter-spacing: unset;
 }
@@ -24,24 +25,24 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    height: 80%;
+    max-height: calc(100% - 60px);
+}
+
 header>h1 {
     text-align: center;
     font-size: 3rem;
     padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: var(--header-color);
 }
 
 hr {
     height: 3px;
-    color: white;
-    width: var(--hr-color);
-}
-
-main section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    color: var(--hr-color);
+    width: 100%;
 }
 
 .page-wrapper {
@@ -54,9 +55,26 @@ main section {
 }
 
 .page-content {
-    height: calc(100% - 60px);
+    height: calc(100% - 70px);
     width: clamp(50%, 100%, 100vw);
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
+}
+
+@media screen and (max-width:640px) {
+    header>h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    header>h1 {
+        font-size: 1.6rem;
+    }
+
+    .page-content {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }

@@ -10,9 +10,9 @@ footer {
     /*important to footer placement*/
     position: absolute;
     bottom: 0px;
-    height: 60px;
+    height: 70px;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 20px;
     background-color: transparent;
     color: var(--footer-color);
 }

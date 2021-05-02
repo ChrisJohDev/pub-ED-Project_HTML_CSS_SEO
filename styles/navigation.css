@@ -11,20 +11,26 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--header-color);
-    padding: 0.5rem;
-    transition: 1s eas-in 200ms;
+    padding: 0.5rem 1rem;
+    background: radial-gradient(var(--nav-item-bg-color), var(--bg-main));
+    /*background-color: var(--nav-item-bg-color);*/
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    transition: 500ms ease-in 100ms;
 }
 
 nav a:hover {
     color: var(--hover-color);
-    background-color: var(--hover-bg-color);
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    transition: 1s eas-in 200ms;
+    background: radial-gradient(var(--hover-bg-color), var(--bg-main));
+    transition: 500ms ease-in 100ms;
 }
 
 nav>figure {
     display: inline-block;
+}
+
+nav>figure>a {
+    background: transparent;
 }
 
 nav>ul {
@@ -45,3 +51,20 @@ nav>ul::before {
     margin-right: 2.5rem;
     padding: 0.5rem;
 }
+
+@media screen and (max-width:900px) {
+    nav>ul::before {
+        content: "";
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        display: table;
+    }
+}
+
+@media screen and (max-width:640) {}

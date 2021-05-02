@@ -1,11 +1,12 @@
-main {
-    height: 80%;
-    max-height: calc(100% - 60px);
+main div {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-section {
-    padding-top: 4rem;
-}
+main div {}
 
 .home-card {
     width: clamp(40%, 70%, 100%);
@@ -22,21 +23,82 @@ section {
 }
 
 .home-card>h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: var(--header-color);
 }
 
-.home-card article {
+.home-card div {
     width: clamp(30%, 70%, 95%);
 }
 
-.home-card article hr {
+.home-card div hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.home-card article>p {
+.home-card div>p {
     padding: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     letter-spacing: 0.7px;
+}
+
+@media screen and (max-width: 900px) {
+    .home-card>h2 {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    header>h1[class="home-page"] {
+        font-size: 2rem;
+    }
+
+    .home-card {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .home-card>h2 {
+        font-size: 1.8rem;
+    }
+
+    .home-card {
+        width: 90%;
+    }
+
+    .home-card div>p {
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header>h1[class="home-page"] {
+        font-size: 1.7rem;
+    }
+
+    .home-card {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+
+    .home-card>h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-card div {
+        width: 95%;
+    }
+
+    .home-card div>p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    header>h1[class="home-page"] {
+        font-size: 1.6rem;
+    }
 }
