@@ -33,6 +33,10 @@ nav>figure>a {
     background: transparent;
 }
 
+nav>figure>a:hover {
+    background: transparent;
+}
+
 nav>ul {
     display: inline-block;
     text-decoration: none;
